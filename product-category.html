@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="熱電偶,熱電阻,工業用溫度測量,溫度校正">
+    <meta name="description" content="工業用溫度計製造商,溫度儀校中心">
+    <title>產品類別</title>
+    <link rel="icon" type="image/png" href="img for HPSample/icon_thermoway.png">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <!--引入Font Awesome 的 CSS-->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+    
+</head>
+
+<body>
+  <!--頁首-->
+  <header>
+      <div class="phone-header-top">    <!--手機響應式-->
+        <!--設定Logo的樣式-->
+        <a href="index.html"><img class="logo" src="img for HPSample/Logo_full.png" style="filter: brightness(120%);">
+        </a>
+              
+        <!--寫語言列-->
+        <select class="LangBar">
+          <option value="zh-TW">繁體中文</option>
+          <option value="zh-CN">简体中文</option>
+          <option value="en-US">English</option>
+        </select>
+
+        <div class="mobile-language">     <!--手機響應式-->
+          中文 / EN
+        </div>
+
+        <!--手機版漢堡-->
+        <button class="menu-toggle">☰</button>
+      </div>
+        
+        <div class="search">
+            <input class="SearchBar" type="text" placeholder="搜尋">
+            <button class="SearchButton" type="submit"><img class="search-icon" src="img for HPSample/search-8924.png">
+            </button>
+        </div>
+    </header>
+
+        
+
+  <!--導覽列-->
+    <nav>
+        <div class="navproduct">          <!--dropdown, 產品-->
+            <button class="dropbtn" onclick="myFunction()"><a id="dropbtnproduct" href="product-category.html">產品 </a>
+               <i class="fa fa-bars"></i></button>                           <!-- 我刪了這個三角形<i class="fa fa-caret-down"></i> -->
+            <!--第一層分類-->
+            <ul class="navproduct-level1" id="myDropdown">
+              <li><a href="#" class="level1-item" onclick="toggleLevel2(event)">熱電偶</a>
+                <!--第二層分類-->
+                <ul class="navproduct-level2-tc" id="myDropdown1-2">
+                  <li><a href="#" class="level2-item active-level2" style="font-weight: bold;">熱電偶</a></li>   <!--為了加藍色底線-->
+                  <li><a href="#" class="level2-item">素線型熱電偶</a></li>
+                  <li><a href="#" class="level2-item">導線型熱電偶</a></li>
+                  <li><a href="mi-sheath-tc.html" class="level2-item">金屬被覆熱電偶</a></li>                  
+                </ul>
+              </li>
+
+              <li><a href="#" class="level1-item">熱電阻</a></li>
+
+              <li><a href="#" class="level1-item">測溫線/導線</a></li>
+            </ul>
+
+        </div>
+
+        <!--其他導覽列項目-->
+        <div class="nav-right">
+          <div class="navshop">
+            <a class="navitem" href="#onlineshop"><img src="img for HPSample/icon_onlineshop_gpt1.png">線上商店</a>
+          </div>
+
+          <div class="navcontact">
+            <a class="navitem" href="contact.html">聯絡我們</a>
+          </div>
+        
+          <div class="navnews">
+            <a class="navitem" href="#news">最新消息</a>
+          </div>
+
+          <div class="navbrand">    <!--品牌-->
+            <a class="navitem" id="ntbblock" href="#brand">代理品牌</a>
+            <ul class="navbrand-level1">
+              <li><a href="#">INOR</a></li>
+              <li><a href="#">SANDVIK</a></li>
+              <li><a href="#">MARLIN</a></li>
+              <li><a href="#">OMEGA</a></li>
+              <li><a href="#">DWYER</a></li>
+            </ul>
+          </div>
+         
+          <div class="navdownload">    <!--下載-->
+            <a class="navitem" href="#download">下載</a>
+          </div>
+
+          <div class="navcalibration">
+            <a class="navitem" href="#calibration">儀校中心</a>
+          </div>
+
+          <div class="navabout">
+            <a class="navitem" href="about.html">關於我們</a>
+          </div>
+        </div>                     
+        
+    </nav>
+
+    <!--手機響應式導覽列-->
+    <div class="mobile-nav">
+      <a href="product-category.html">產品</a>
+      <a href="#about">關於我們</a>
+      <a href="#calibration">儀校中心</a>
+      <a href="#download">下載</a>
+      <a href="#brand">代理品牌</a>
+      <a href="#news">最新消息</a>
+      <a href="contact.html">聯絡我們</a>
+    </div>
+    
+
+<!--產品分類-->
+    <div class="wrap">
+        <div class="PC-grid">                <!-- PC = Product Category -->
+            <a href="#" class="PC-card">  <!--1-->
+                <div class="PC-image">
+                    <img src="img for HPSample/分類圖/1 thermocouple.jpg" alt="熱電偶測棒"> 
+                </div>
+                <div class="PC-name">熱電偶測棒和組件</div>
+            </a>
+
+            <a href="#" class="PC-card">  <!--2-->
+                <div class="PC-image">
+                    <img src="img for HPSample/分類圖/2 RTD.jpg" alt="熱電阻元件及熱電阻溫度計"> 
+                </div>
+                <div class="PC-name">熱電阻元件及熱電阻溫度計</div>
+            </a>
+
+            <a href="#" class="PC-card">  <!--3-->
+                <div class="PC-image">
+                    <img src="img for HPSample/分類圖/3 wire.JPG" alt="測溫線/導線"> 
+                </div>
+                <div class="PC-name">測溫線/導線</div>
+            </a>
+
+            <a href="#" class="PC-card">  <!--4-->
+                <div class="PC-image">
+                    <img src="img for HPSample/分類圖/4 connect.jpg" alt="接頭"> 
+                </div>
+                <div class="PC-name">接頭</div>
+            </a>
+
+            <a href="#" class="PC-card">  <!--5-->
+                <div class="PC-image">
+                    <img src="img for HPSample/分類圖/5 sensing accessories.jpg" alt="sensing accessories"> 
+                </div>
+                <div class="PC-name">感測配件</div>
+            </a>
+
+            <a href="#" class="PC-card">  <!--6-->
+                <div class="PC-image">
+                    <img src="img for HPSample/分類圖/6 protection tube.jpg" alt="保護管"> 
+                </div>
+                <div class="PC-name">保護管</div>
+            </a>
+
+            <a href="#" class="PC-card">  <!--7-->
+                <div class="PC-image">
+                    <img src="img for HPSample/分類圖/7 semiconductor.jpg" alt="半導體產業應用"> 
+                </div>
+                <div class="PC-name">半導體產業應用</div>
+            </a>
+
+            <a href="#" class="PC-card">  <!--8-->
+                <div class="PC-image">
+                    <img src="img for HPSample/分類圖/8 transmitter.jpg" alt="溫度傳送器"> 
+                </div>
+                <div class="PC-name">溫度傳送器</div>
+            </a>
+
+            <a href="#" class="PC-card">  <!--9-->
+                <div class="PC-image">
+                    <img src="img for HPSample/分類圖/9 calibration.jpg" alt="校正儀器"> 
+                </div>
+                <div class="PC-name">校正儀器</div>
+            </a>
+
+            <a href="#" class="PC-card">  <!--10-->
+                <div class="PC-image">
+                    <img src="img for HPSample/分類圖/10 monitor.png" alt="監控設備"> 
+                </div>
+                <div class="PC-name">監控設備</div>
+            </a>
+
+            <a href="#" class="PC-card">  <!--11-->
+                <div class="PC-image">
+                    <img src="img for HPSample/分類圖/11 wireless.jpg" alt="無線系統"> 
+                </div>
+                <div class="PC-name">無線系統</div>
+            </a>
+
+            <a href="#" class="PC-card">  <!--12-->
+                <div class="PC-image">
+                    <img src="img for HPSample/分類圖/12 equipment.JPG" alt="設備工具"> 
+                </div>
+                <div class="PC-name">設備工具</div>
+            </a>
+
+            <a href="#" class="PC-card">  <!--13-->
+                <div class="PC-image">
+                    <img src="img for HPSample/分類圖/13 heater.jpg" alt="加熱器"> 
+                </div>
+                <div class="PC-name">加熱器</div>
+            </a>
+
+            <a href="#" class="PC-card">  <!--14-->
+                <div class="PC-image">
+                    <img src="img for HPSample/分類圖/14 pressure.png" alt="壓力測量"> 
+                </div>
+                <div class="PC-name">壓力測量</div>
+            </a>
+
+            <a href="#" class="PC-card">  <!--15-->
+                <div class="PC-image">
+                    <img src="img for HPSample/分類圖/15 flow.jpg" alt="流量測量"> 
+                </div>
+                <div class="PC-name">流量測量</div>
+            </a>
+
+            <a href="#" class="PC-card">  <!--16-->
+                <div class="PC-image">
+                    <img src="img for HPSample/分類圖/16 level.avif" alt="液位測量"> 
+                </div>
+                <div class="PC-name">液位測量</div>
+            </a>
+
+        </div>  <!--PC-grid end-->
+    </div>     <!--class wrap end-->
+    
+
+<!--footer區塊-->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <!--Logo-->
+      <div class="footer-logo">
+        <a href="index.html"><img src="img for HPSample/white Logo2.png"></a>
+      </div>
+
+      <!--company address-->
+      <div class="footer-col">
+        <p class="footer-title">Thermoway Industrial Co., Ltd.</p>
+        <p>Taipei Headquarter</p>
+        <p>7F, No. 147 Tatung Rd. Sec.2,</p>
+        <p>Shijr, Taipei, Taiwan</p>
+      </div>
+
+      <!--contact-->
+      <div class="footer-col">
+        <p class="footer-title">Contact</p>
+        <p>phone: +886(0)2-8692 6689</p>
+        <p>fax: +886(0)2-8692 6669</p>
+        <p>email: info@thermoway.com</p>
+      </div>
+
+    </div>   <!--footer-inner的close-->
+    
+    <!--Bottom Link-->
+    <div class="footer-bottom">
+      <a href="#">Cookie Policy</a>
+    </div>
+
+  </footer>
+
+<!--帶入JS-->
+    <script src="index.js"></script>   
+    <noscript>無法使用JavaScript!</noscript>
+</body>
+</html>
+       
+    

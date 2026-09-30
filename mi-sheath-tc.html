@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="熱電偶,熱電阻,工業用溫度測量,溫度校正">
+    <meta name="description" content="工業用溫度計製造商,溫度儀校中心">
+    <title>金屬被覆熱電偶</title>
+    <link rel="icon" type="image/png" href="img for HPSample/icon_thermoway.png">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src=index.js defer></script>
+    <!--引入Font Awesome 的 CSS-->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+    
+    
+</head>
+<body>
+<!--頁首-->
+  <header>
+      <div class="phone-header-top">    <!--手機響應式-->
+        <!--設定Logo的樣式-->
+        <a href="index.html"><img class="logo" src="img for HPSample/Logo_full.png" style="filter: brightness(120%);">
+        </a>
+              
+        <!--寫語言列-->
+        <select class="LangBar">
+          <option value="zh-TW">繁體中文</option>
+          <option value="zh-CN">简体中文</option>
+          <option value="en-US">English</option>
+        </select>
+
+        <div class="mobile-language">     <!--手機響應式-->
+          中文 / EN
+        </div>
+
+        <!--手機版漢堡-->
+        <button class="menu-toggle">☰</button>
+      </div>
+        
+        <div class="search">
+            <input class="SearchBar" type="text" placeholder="搜尋">
+            <button class="SearchButton" type="submit"><img class="search-icon" src="img for HPSample/search-8924.png">
+            </button>
+        </div>
+    </header>
+
+        
+
+  <!--導覽列-->
+    <nav>
+        <div class="navproduct">          <!--dropdown, 產品-->
+            <button class="dropbtn" onclick="myFunction()"><a id="dropbtnproduct" href="product-category.html">產品 </a>
+               <i class="fa fa-bars"></i></button>                           <!-- 我刪了這個三角形<i class="fa fa-caret-down"></i> -->
+            <!--第一層分類-->
+            <ul class="navproduct-level1" id="myDropdown">
+              <li><a href="#" class="level1-item" onclick="toggleLevel2(event)">熱電偶</a>
+                <!--第二層分類-->
+                <ul class="navproduct-level2-tc" id="myDropdown1-2">
+                  <li><a href="#" class="level2-item active-level2" style="font-weight: bold;">熱電偶</a></li>   <!--為了加藍色底線-->
+                  <li><a href="#" class="level2-item">素線型熱電偶</a></li>
+                  <li><a href="#" class="level2-item">導線型熱電偶</a></li>
+                  <li><a href="mi-sheath-tc.html" class="level2-item">金屬被覆熱電偶</a></li>                  
+                </ul>
+              </li>
+
+              <li><a href="#" class="level1-item">熱電阻</a></li>
+
+              <li><a href="#" class="level1-item">測溫線/導線</a></li>
+            </ul>
+
+        </div>
+
+        <!--其他導覽列項目-->
+        <div class="nav-right">
+          <div class="navshop">
+            <a class="navitem" href="#onlineshop"><img src="img for HPSample/icon_onlineshop_gpt1.png">線上商店</a>
+          </div>
+
+          <div class="navcontact">
+            <a class="navitem" href="contact.html">聯絡我們</a>
+          </div>
+        
+          <div class="navnews">
+            <a class="navitem" href="#news">最新消息</a>
+          </div>
+
+          <div class="navbrand">    <!--品牌-->
+            <a class="navitem" id="ntbblock" href="#brand">代理品牌</a>
+            <ul class="navbrand-level1">
+              <li><a href="#">INOR</a></li>
+              <li><a href="#">SANDVIK</a></li>
+              <li><a href="#">MARLIN</a></li>
+              <li><a href="#">OMEGA</a></li>
+              <li><a href="#">DWYER</a></li>
+            </ul>
+          </div>
+         
+          <div class="navdownload">    <!--下載-->
+            <a class="navitem" href="#download">下載</a>
+          </div>
+
+          <div class="navcalibration">
+            <a class="navitem" href="#calibration">儀校中心</a>
+          </div>
+
+          <div class="navabout">
+            <a class="navitem" href="about.html">關於我們</a>
+          </div>
+        </div>                     
+        
+    </nav>
+
+    <!--手機響應式導覽列-->
+    <div class="mobile-nav">
+      <a href="product-category.html">產品</a>
+      <a href="#about">關於我們</a>
+      <a href="#calibration">儀校中心</a>
+      <a href="#download">下載</a>
+      <a href="#brand">代理品牌</a>
+      <a href="#news">最新消息</a>
+      <a href="contact.html">聯絡我們</a>
+    </div>
+    
+  
+
+<!--產品介紹頁 真正的內容-->
+  <main class="product-page">
+    <h1 class="product-title">金屬被覆熱電偶<br>MI Sheath Thermocouple</h1>
+    
+    <section class="product-hero">
+        <img id="miTcwConn" class="product-hero-item" src="img for HPSample/MI Sheath TC with Connector.png" alt="接頭terminal的金屬被覆熱電偶">
+        <p class="product-hero-item">
+            又名鎧裝型熱電偶或者細速熱電偶，是由金屬材質包
+            覆在熱電偶芯線外，在中間填充高壓緊密的礦物絕緣
+            粉末，再施予回火處理。<br>
+            這種結構提供了卓越的絕緣
+            效果以及優秀的柔韌度，是一種具高靈敏度，高耐壓
+            性，耐衝擊，機械強度佳等優點的溫度感測器。<br>
+            &#10004 應用溫度範圍: -200°C - 1700°C<br>
+            &#10004 超快速反應<br>
+            &#10004 優異柔韌度<br>
+            &#10004 高機械強度<br>
+            &#10004 更長的使用壽命<br>
+          </p>   
+    </section>   
+
+    <section class="product-feature">
+        <h2>與傳統熱電偶相比，它擁有更多優異的特性:</h2>
+        <ul>
+          <li>快速反應:較小的金屬外徑，其熱容量也較小，對溫度變化具高度敏感性，提供了非常快速的反應時間。</li>
+          <li>高柔韌度:金屬被覆熱電偶具有高機械強度和高柔韌性，可輕鬆安裝，彎曲半徑可達外徑的2倍。</li>
+          <li>使用壽命更長:儘管外徑更小且重量更輕，但與傳統熱電偶相比，金屬被覆熱電偶的使用壽命更常。</li>
+          <li>高機械強度，高耐壓:複合結構可抵抗極高的振動水平，通過選擇合適的金屬被覆材料，可在腐蝕性環境和異常溫度下可靠使用。管徑雖小，但在650°C的溫度下可承受約350Mpa的壓力。</li>
+        </ul>
+    </section>
+
+    <!-- 不同的產品應用形式照片 -->
+    <h2 class="pma-title">產品應用</h2>
+    <section class="product-model-application">
+      <div class="pma-item">
+        <div class="pma-image">                               <!--1-->
+          <img src="img for HPSample/MITCC 400x400.png">
+        </div>
+        <div class="pma-caption">
+          <h3>附接頭的金屬被覆熱電偶</h3>
+          <p>預先安裝熱電偶接頭，收到即可快速連接測溫設備，省去現場自行接線的步驟</p>
+        </div>         
+      </div>
+
+      <div class="pma-item">
+        <div class="pma-image">                               <!--2-->
+          <img src="img for HPSample/MITCH 400x400.png">
+        </div>
+        <div class="pma-caption">
+          <h3>附接線盒的金屬被覆熱電偶</h3>
+          <p>採用鋁合金接線盒，可保護接線端，並方便現場配線與後續維護</p>
+        </div>         
+      </div>
+
+      <div class="pma-item">    
+        <div class="pma-image">                           <!--3-->
+          <img src="img for HPSample/ST041T wb 400x400.png">
+        </div>
+        <div class="pma-caption">
+          <h3>Super-Fine，極細金屬被覆熱電偶</h3>
+          <p>極細外徑適合用於狹小的空間，例如風洞、精密設備或狹窄管路</p>
+        </div>         
+      </div>    
+    </section>
+  
+    <section class="product-spec">
+        <h2>Specification</h2>
+
+        <table>
+          <tr>
+            <th>Thermocouple Type</th>
+            <td>K, E, J, T, N, R, S</td>
+          </tr>
+          <tr>
+            <th>Sheath Diameter(mm)</th>
+            <td>0.25 - 8.0</td>
+          </tr>
+          <tr>
+            <th>Sheath Material</th>
+            <td>304 Stainless Steel, 316 Stainless Steel, Inconel® 600</td>
+          </tr>
+          <tr>
+            <th>Hot Junction</th>
+            <td>Grounded, Ungrounded, Exposed</td>
+          </tr>
+          <tr>
+            <th>Temperature Range</th>
+            <td>-200°C - 1700°C(according to type)</td>
+          </tr>
+          <tr>
+            <th>Temination</th>
+            <td>Thermocouple Connector, Protection Head</td>
+          </tr>
+        </table>
+    </section>
+
+    <section class="product-download">
+      <h2>Download</h2>
+      <a href="asset/CATALOG-V2_S_2026-07.pdf" class="product-download-item" download>
+        <img src="img for HPSample/pdf_icon.png" alt="PDF file icon">
+        <span>中文版產品型錄</span>
+      </a>
+    </section>
+
+    
+    <p class="contact-link"><a href="contact.html">Contact us</a> for more production information</p>
+  
+  </main>
+
+<!--footer區塊-->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <!--Logo-->
+      <div class="footer-logo">
+        <a href="index.html"><img src="img for HPSample/white Logo2.png"></a>
+      </div>
+
+      <!--company address-->
+      <div class="footer-col">
+        <p class="footer-title">Thermoway Industrial Co., Ltd.</p>
+        <p>Taipei Headquarter</p>
+        <p>7F, No. 147 Tatung Rd. Sec.2,</p>
+        <p>Shijr, Taipei, Taiwan</p>
+      </div>
+
+      <!--contact-->
+      <div class="footer-col">
+        <p class="footer-title">Contact</p>
+        <p>phone: +886(0)2-8692 6689</p>
+        <p>fax: +886(0)2-8692 6669</p>
+        <p>email: info@thermoway.com</p>
+      </div>
+
+    </div>   <!--footer-inner的close-->
+    
+    <!--Bottom Link-->
+    <div class="footer-bottom">
+      <a href="#">Cookie Policy</a>
+    </div>
+
+  </footer>
+
+
+ <!--帶入JS-->
+  <script src="index.js"></script>
+  <noscript>無法使用JavaScript!</noscript>
+    
+</body>
+</html>

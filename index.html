@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="熱電偶,熱電阻,工業用溫度測量,溫度校正">
+    <meta name="description" content="工業用溫度計製造商,溫度儀校中心">
+    <title>THERMOWAY</title>
+    <link rel="icon" type="image/png" href="img for HPSample/icon_thermoway.png">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <!--引入Font Awesome 的 CSS-->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+  <!--頁首-->
+    <header>
+      <div class="phone-header-top">    <!--手機響應式-->
+        <!--設定Logo的樣式-->
+        <a href="index.html"><img class="logo" src="img for HPSample/Logo_full.png" style="filter: brightness(120%);">
+        </a>
+              
+        <!--寫語言列-->
+        <select class="LangBar">
+          <option value="zh-TW">繁體中文</option>
+          <option value="zh-CN">简体中文</option>
+          <option value="en-US">English</option>
+        </select>
+
+        <div class="mobile-language">     <!--手機響應式-->
+          中文 / EN
+        </div>
+
+        <!--手機版漢堡-->
+        <button class="menu-toggle">☰</button>
+      </div>
+        
+        <div class="search">
+            <input class="SearchBar" type="text" placeholder="搜尋">
+            <button class="SearchButton" type="submit"><img class="search-icon" src="img for HPSample/search-8924.png">
+            </button>
+        </div>
+    </header>
+
+        
+
+  <!--導覽列-->
+    <nav>
+        <div class="navproduct">          <!--dropdown, 產品-->
+            <button class="dropbtn" onclick="myFunction()"><a id="dropbtnproduct" href="product-category.html">產品 </a>
+               <i class="fa fa-bars"></i></button>                           <!-- 我刪了這個三角形<i class="fa fa-caret-down"></i> -->
+            <!--第一層分類-->
+            <ul class="navproduct-level1" id="myDropdown">
+              <li><a href="#" class="level1-item" onclick="toggleLevel2(event)">熱電偶</a>
+                <!--第二層分類-->
+                <ul class="navproduct-level2-tc" id="myDropdown1-2">
+                  <li><a href="#" class="level2-item active-level2" style="font-weight: bold;">熱電偶</a></li>   <!--為了加藍色底線-->
+                  <li><a href="#" class="level2-item">素線型熱電偶</a></li>
+                  <li><a href="#" class="level2-item">導線型熱電偶</a></li>
+                  <li><a href="mi-sheath-tc.html" class="level2-item">金屬被覆熱電偶</a></li>                  
+                </ul>
+              </li>
+
+              <li><a href="#" class="level1-item">熱電阻</a></li>
+
+              <li><a href="#" class="level1-item">測溫線/導線</a></li>
+            </ul>
+
+        </div>
+
+        <!--其他導覽列項目-->
+        <div class="nav-right">
+          <div class="navshop">
+            <a class="navitem" href="#onlineshop"><img src="img for HPSample/icon_onlineshop_gpt1.png">線上商店</a>
+          </div>
+
+          <div class="navcontact">
+            <a class="navitem" href="contact.html">聯絡我們</a>
+          </div>
+        
+          <div class="navnews">
+            <a class="navitem" href="#news">最新消息</a>
+          </div>
+
+          <div class="navbrand">    <!--品牌-->
+            <a class="navitem" id="ntbblock" href="#brand">代理品牌</a>
+            <ul class="navbrand-level1">
+              <li><a href="#">INOR</a></li>
+              <li><a href="#">SANDVIK</a></li>
+              <li><a href="#">MARLIN</a></li>
+              <li><a href="#">OMEGA</a></li>
+              <li><a href="#">DWYER</a></li>
+            </ul>
+          </div>
+         
+          <div class="navdownload">    <!--下載-->
+            <a class="navitem" href="#download">下載</a>
+          </div>
+
+          <div class="navcalibration">
+            <a class="navitem" href="#calibration">儀校中心</a>
+          </div>
+
+          <div class="navabout">
+            <a class="navitem" href="about.html">關於我們</a>
+          </div>
+        </div>                     
+        
+    </nav>
+
+    <!--手機響應式導覽列-->
+    <div class="mobile-nav">
+      <a href="product-category.html">產品</a>
+      <a href="#about">關於我們</a>
+      <a href="#calibration">儀校中心</a>
+      <a href="#download">下載</a>
+      <a href="#brand">代理品牌</a>
+      <a href="#news">最新消息</a>
+      <a href="contact.html">聯絡我們</a>
+    </div>
+
+
+<!--幻燈片-->
+    <!--幻燈片-->
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+    <div class="mySlides fade" id="slide1">
+      <img src="img for HPSample/image_Petroleum_wika.jpg" style="width:100%">
+      <div class="text">
+        <h1>Refinery</h1>
+        <p>Thermocouples are used in refineries to measure high-temperature and 
+            high-pressure processes, and are indispensable temperature measurement 
+            devices.</p>
+      </div>        
+    </div>
+
+    <div class="mySlides fade" id="slide2">
+      <img src="img for HPSample/image_Turbine_cnn.jpg" style="width:100%">
+      <div class="text">
+        <h1>Aerospace</h1>
+        <p>Specifically designed for the extreme high temperature, low temperature and 
+            high pressure environments of the aerospace industry, THERMOWAY provide 
+            corrosion-resistant and vibration-resistant products.</p>
+      </div>
+    </div>
+
+    <div class="mySlides fade" id="slide3">
+      <img src="img for HPSample/image_Semiconductor_天下雜誌.jpg" style="width:100%">
+      <div class="text">
+        <h1>Semiconductor</h1>
+        <p>THERMOWAY provide suitable temperature measurement systems for each 
+            process stage of the semiconductor industry to meet the environmental
+            requirements for customers.</p>
+      </div>
+    </div>
+  
+    <div class="mySlides fade" id="slide4">
+    <img src="img for HPSample/image_Nuclear-Banner.png" style="width:100%">
+      <div class="text">
+        <h1>Energy</h1>
+        <p>Power plants use thermocouples to measure extreme heat, 
+            which helps monitor the operation of boilers, nuclear reactors 
+            and turbines to ensure safety and efficiency.</p>
+      </div>
+    </div>
+<br>
+
+<!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+
+<!-- 產品圖示區塊 -->
+<section class="featured-section">
+  <h2 class="sec-title">推 薦 產 品</h2>
+
+  <button class="nav-btn left" onclick="moveSlide(-1)">&#10094;</button>
+
+  <div class="carousel-wrapper">
+    <div class="carousel" id="carousel">
+
+      <div class="card">
+        <img src="img for HPSample/RTD WAFER_400x300.png" alt="RTD Wafer">
+        <p>RTD Wafer</p>
+      </div>
+
+      <div class="card">
+        <img src="img for HPSample/TW-WiFi_400x300.png" alt="TW-WiFi無線溫濕度計">
+        <p>TW-WiFi 無線溫濕度計</p>
+      </div>
+
+      <div class="card">
+        <img src="img for HPSample/TB2001_400x300.png" alt="TB2001體溫計校正專用紅外線黑體爐">
+        <p>TB2001 體溫計校正專用紅外線黑體爐</p>
+      </div>
+
+      <div class="card">
+        <img src="img for HPSample/TC WAFER_400x300.png" alt="TC Wafer">
+        <p>TC Wafer</p>
+      </div>
+
+      <div class="card">
+        <img src="img for HPSample/TW-DY_400x300.png" alt="TW-DY校正專用乾體爐">
+        <p>TW-DY 校正專用乾體爐</p>
+      </div>
+
+      <div class="card">
+        <img src="img for HPSample/MINI-2K5A-5_400x300.png" alt="MINI-2K5A-5點焊機">
+        <p>MINI-2K5A-5 點焊機</p>
+      </div>
+
+    </div>
+  </div>
+
+  <button class="nav-btn right" onclick="moveSlide(1)">&#10095;</button>
+  </section>  
+
+<!--媒體區塊-->
+  <section class="media-section">
+    <div class="media-left">
+      <a href="your-link.html" class="media-link">
+        <img src="img for HPSample/非金屬保護管-陶瓷.jpg">
+      
+        <div class="media-text">選擇最適合的絕緣材料</div>
+      </a>
+    </div>  
+    
+    <div class="media-right">
+      <video controls>
+        <source src="img for HPSample/Introduction-of-APAQ-130_2021_Taiwan.mp4" type="video/mp4">
+        你的瀏覽器不支援 HTML5 影片播放
+      </video>
+    </div>
+  
+  </section>
+
+<!--下載區塊-->
+  <section class="download-section">  
+    <div class="download-item">      <!--1-->
+      <a href="#">
+        <div class="thumb">      <!--thumb是縮圖的意思-->
+          <img src="img for HPSample/ISO9001浮水印.jpg" alt="certificate">
+          <div class="overlay">   <!--overlay是覆蓋在上面的一層-->
+            <span class="icon">👁</span>    <!--icon是小圖-->
+          </div>
+        </div>
+        <div class="caption">各項認證</div>    <!--文字-->
+      </a>
+    </div>
+    
+    <div class="download-item">    <!--2-->
+      <a href="#">
+        <div class="thumb">    <!--thumb 是 thumbnail（縮圖）的縮寫，通常用來裝「預覽小圖」的區塊-->
+          <img src="img for HPSample/型錄封面.jpg" alt="catalog">
+          <div class="overlay">   <!--overlay 字面意思是「覆蓋在上面的一層」，通常用來放半透明黑色遮罩、圖示或文字。-->
+            <span class="icon">👁</span>
+          </div>
+        </div>
+        <div class="caption">產品型錄</div>
+      </a>
+    </div>
+
+    <div class="download-item">     <!--3-->
+      <a href="#">
+        <div class="thumb">
+          <img src="img for HPSample/Download圖示.jpg" alt="software">
+          <div class="overlay">
+            <span class="icon">👁</span>
+          </div>
+        </div>
+        <div class="caption">軟體下載</div>
+      </a>
+    </div>
+
+  </section>
+
+
+  <!-- 產品類別 Overlay -->
+
+  <div class="category-entry">
+    <button class="open-category-btn" onclick="openCategoryOverlay()">
+     更 多 產 品 類 別 
+    </button>
+  </div>
+
+    <!--Fullscreen Overlay -->
+    <div id="categoryOverlay" class="category-overlay">
+      <button class="close-btn" onclick="closeCategoryOverlay()" aria-label="關閉產品類別">
+        &times;
+      </button>
+
+      <div class="category-overlay-inner">
+        <h2 class="overlay-title">Product Categories</h2>
+
+        <div class="category-grid">   
+          <div class="category-col">   <!--類別1-->
+            <h3><a href="#">Thermocouple Assembly</a></h3>
+            <ul>
+              <li><a href="#">Unsheathed Fine Gage Thermocouple</a></li>
+              <li><a href="#">Insulated Wire Thermocouple</a></li>
+              <li><a href="#">Transition Joint Probe</a></li>
+              <li><a href="#">Surface Temperature Sensor</a></li>
+              <li><a href="#">MI Sheath Thermocouple</a></li>
+              <li><a href="#">Extreme Temperature</a></li>
+              <li><a href="#">Explosion-proof Thermocouple</a></li>
+              <li><a href="#">TC with Metal Protection Tube</a></li>
+              <li><a href="#">TC with Ceramic Protection Tube</a></li>
+              <li><a href="#">Profile Probe</a></li>
+              
+            </ul>
+          </div>
+        
+          <div class="category-col">  <!--類別2-->
+            <h3><a href="#">Resistance Temperature Detector</a></h3>
+            <ul>
+              <li><a href="#">RTD Element</a></li>
+              <li><a href="#">General Purpose RTD</a></li>
+              <li><a href="#">Sanitary RTD</a></li>
+              <li><a href="#">RTD Probe with Transition</a></li>
+              <li><a href="#">Surface Temperature Sensor</a></li>
+              <li><a href="#">MI Sheath RTD</a></li>
+              <li><a href="#">RTD with Metal Protection Tube</a></li>
+              <li><a href="#">RTD with Ceramic Protection Tube</a></li>
+                          
+            </ul>
+          </div>
+
+          <div class="category-col">  <!--類別3-->
+            <h3><a href="#">TC/RTD Wire and Cable</a></h3>
+            <ul>
+              <li><a href="#">Bare Thermocouple Wire</a></li>
+              <li><a href="#">Mineral Insulated Cable</a></li>
+              <li><a href="#">Thermocouple Wire</a></li>
+              <li><a href="#">Extension/Compensating Cable</a></li>
+                                      
+            </ul>
+          </div>
+
+          <div class="category-col">  <!--類別4-->
+            <h3><a href="#">Connector</a></h3>
+            <ul>
+              <li><a href="#">TC/RTD Connector</a></li>
+              <li><a href="#">Jack Panel</a></li>
+              <li><a href="#">Connector Accessories</a></li>           
+                                      
+            </ul>
+          </div>
+
+          <div class="category-col">  <!--類別5-->
+            <h3><a href="#">Sensing Accessories</a></h3>
+            <ul>
+              <li><a href="#">TC and RTD Protection Head</a></li>
+              <li><a href="#">Termimal Block</a></li>
+              <li><a href="#">Thermowell</a></li>           
+                                      
+            </ul>
+          </div>
+
+          <div class="category-col">  <!--類別6-->
+            <h3><a href="#">Protection Tube</a></h3>
+            <ul>
+              <li><a href="#">Metal Protection Tube</a></li>
+              <li><a href="#">Alumina Tube/Insulator</a></li>
+              <li><a href="#">SiC Tube</a></li> 
+              <li><a href="#">Quartz Tube</a></li>
+              <li><a href="#">Silicon Nitride</a></li>
+              <li><a href="#"></a>Sapphire Tube</li>
+              <li><a href="#"></a>SANDVIK</li>          
+                                      
+            </ul>
+          </div>
+
+          <div class="category-col">  <!--類別7-->
+            <h3><a href="#">Semiconductor Application</a></h3>
+            <ul>
+              <li><a href="#">Thermocouple Wafer</a></li>
+              <li><a href="#">RTD Wafer</a></li>
+              <li><a href="#">Temperature Monitoring System</a></li> 
+              <li><a href="#">Profile Thermocouple</a></li>         
+                                      
+            </ul>
+          </div>
+
+          <div class="category-col">  <!--類別8-->
+            <h3><a href="#">Temperature Transmitter</a></h3>
+            <ul>
+              <li><a href="#">INOR</a></li>
+              <li><a href="#">TW-WiFi Temperature and Humidity</a></li>
+              <li><a href="#">TW-TRC Temperature Transmitter</a></li> 
+              
+            </ul>
+          </div>
+
+          <div class="category-col">  <!--類別9-->
+            <h3><a href="#">Calibration Equipment</a></h3>
+            <ul>
+              <li><a href="#">Dry Block Temeprature Calibrator</a></li>
+              <li><a href="#">Handheld Calibrator</a></li>
+              <li><a href="#">TB2001 Infrared Blackbody Calibrator</a></li> 
+              
+            </ul>
+          </div>
+
+          <div class="category-col">  <!--類別10-->
+            <h3><a href="#">control & Monitoring Device</a></h3>
+            <ul>
+              <li><a href="#">Paperless Recorder</a></li>
+              <li><a href="#">Infrared Thermometer</a></li>
+              <li><a href="#">Thermal Imaging</a></li>
+              <li><a href="#">Bi-metal Thermometer</a></li>
+              <li><a href="#">Liquid-filled Thermometer</a></li>
+              
+            </ul>
+          </div>
+
+          <div class="category-col">  <!--類別11-->
+            <h3><a href="#">Wireless System</a></h3>
+            <ul>
+              <li><a href="#">TW-WiFi Series</a></li>
+            
+            </ul>
+          </div>
+
+          <div class="category-col">  <!--類別12-->
+            <h3><a href="#">Equipment and Tool</a></h3>
+            <ul>
+              <li><a href="#">Thermocouple Welder</a></li>
+            
+            </ul>
+          </div>
+
+          <div class="category-col">  <!--類別13-->
+            <h3><a href="#">Heater</a></h3>
+            
+          </div>
+
+          <div class="category-col">  <!--類別14-->
+            <h3><a href="#">Pressure Measurement</a></h3>
+            
+          </div>
+
+          <div class="category-col">  <!--類別15-->
+            <h3><a href="#">Flow Measurement</a></h3>
+            
+          </div>
+
+          <div class="category-col">  <!--類別16-->
+            <h3><a href="#">Level Measurement</a></h3>
+            
+          </div>
+        
+
+        </div>     <!--"category-grid"-->
+
+      </div>    <!--"category-overlay-inner"-->
+
+    </div>    <!--"category-overlay"-->    
+
+
+
+  <!--footer區塊-->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <!--Logo-->
+      <div class="footer-logo">
+        <a href="index.html"><img src="img for HPSample/white Logo2.png"></a>
+      </div>
+
+      <!--company address-->
+      <div class="footer-col">
+        <p class="footer-title">Thermoway Industrial Co., Ltd.</p>
+        <p>Taipei Headquarter</p>
+        <p>7F, No. 147 Tatung Rd. Sec.2,</p>
+        <p>Shijr, Taipei, Taiwan</p>
+      </div>
+
+      <!--contact-->
+      <div class="footer-col">
+        <p class="footer-title">Contact</p>
+        <p>phone: +886(0)2-8692 6689</p>
+        <p>fax: +886(0)2-8692 6669</p>
+        <p>email: info@thermoway.com</p>
+      </div>
+
+    </div>   <!--footer-inner的close-->
+    
+    <!--Bottom Link-->
+    <div class="footer-bottom">
+      <a href="#">Cookie Policy</a>
+    </div>
+
+  </footer>
+
+
+<!--帶入JS-->
+    <script src="index.js"></script>   
+    <noscript>無法使用JavaScript!</noscript>
+        
+
+</body>
+</html>
