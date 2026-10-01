@@ -11,14 +11,13 @@ body {
 .logo {
   width: 350px;
 }
-
-
-
-.LangBar {
+   
+.LangBar {margin-right: 20px;                        /*設定語言列的位置*/
             margin-top: 0px;
-          }   /*設定語言列的位置*/
+          }   
 .LangBar {font-family: "Yu Gothic UI";
-         font-size: 2vw;}      /*設定語言列的字體樣式*/
+   
+         font-size: 2vw;}      /*設定語言列的字體樣式*/  /*舊設定font-size: 2vw*/
 .search {display:inline-block;}
          .SearchBar {
             font-size: 1.9vw;}
@@ -28,13 +27,15 @@ body {
   position:absolute;
   top: 30px;
   right: 50px;
+  
 }
 
 .SearchBar {
   position: absolute;
   top: 30px;
   right: 100px;
-  width: 20vw;    /*可視區域的寬度百分比,8-10 */
+  width: 300px;
+  /*width: 20vw;    可視區域的寬度百分比,8-10 */
 }
 
 .LangBar {
@@ -644,6 +645,8 @@ color:#333333;
   grid-template-columns: repeat(3, 1fr);  /*一行3個*/
   gap: 60px;
   padding: 50px;
+  max-width: 1200px;  /*最多就 1200px，不再放大*/
+  margin: 0 auto;    /*→ 讓整個區塊置中*/
   
 }
 
